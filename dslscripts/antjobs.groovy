@@ -22,6 +22,6 @@ job('deploy') {
      * configuring ssh plugin to run docker commands
      */
     steps{
-             shell 'sudo -i scp /Users/Shared/Jenkins/Home/workspace/antbuild/build/demoapp-dev.war /users/abhishekotta/Documents/JenkinsDemo/apache-tomcat-8.5.37/webapps'
+             shell 'sudo scp /Users/Shared/Jenkins/Home/workspace/antbuild/build/demoapp-dev.war /users/abhishekotta/Documents/JenkinsDemo/apache-tomcat-8.5.37/webapps'
       }
 }
