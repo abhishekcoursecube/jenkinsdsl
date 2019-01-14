@@ -13,10 +13,8 @@ job("$basePath/grails-example-build") {
         scm 'H/5 * * * *'
     }
     steps {
-        grails {
-            useWrapper true
-            targets(["test-app",'war'])
-        }
+        grails "test-app war", true
+
     }
 }
 
