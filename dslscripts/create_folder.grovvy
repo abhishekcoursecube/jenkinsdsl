@@ -15,7 +15,7 @@ job("$basePath/grails-example-build") {
     steps {
         grails {
             useWrapper true
-            targets(["test-app", "war"])
+            targets(["test-app",'war'])
         }
     }
 }
